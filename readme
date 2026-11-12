@@ -1,0 +1,9 @@
+En klassvariabel finns kvar så länge klassen finns i minnet och kan användas av flera metoder. 
+En lokal variabel skapas inuti en metod och finns bara under tiden metoden körs. 
+När metoden avslutas försvinner den ur sitt lokala scope.
+
+En nästlad funktion kan inte nå variabler från en annan metod eftersom variabeln ligger 
+utanför dess räckvidd. 
+Enligt LEGB-regeln letar Python efter variabler i Local, Enclosing, Global och Built-in. 
+Eftersom den andra metoden inte omsluter den nästlade funktionen kan den inte komma åt 
+dess lokala variabler.
